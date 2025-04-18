@@ -27,4 +27,4 @@ A lightweight Chrome extension to log course upload & QC check‑lists directly 
  ## Screenshots
 
 ![During Upload](./screenshots/during-upload.png)
-![QC After Upload](./screenshots/qc-after-upload.png)
+![QC After Upload](qc-after-upload.png)
