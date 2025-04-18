@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "BoostUploaderExtension",
+  "version": "1.0",
+  "description": "Persistent version of the uploader",
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"],
+  "icons": {
+    "128": "icon.png"
+  }
+}

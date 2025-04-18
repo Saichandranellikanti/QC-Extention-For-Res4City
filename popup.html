@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BoostUploaderExtension</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 360px; padding: 10px; }
+    .tabs { display: flex; margin-bottom: 10px; }
+    .tab { flex: 1; padding: 10px; cursor: pointer; text-align: center; border: 1px solid #ccc; }
+    .tab.active { background-color: #007bff; color: white; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .form-group { margin-bottom: 10px; }
+    label { font-weight: bold; display: block; }
+    select, input, textarea { width: 100%; padding: 5px; margin-top: 5px; }
+    button { padding: 10px; width: 100%; background: #007bff; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <div id="uploadTab" class="tab active">During Upload</div>
+    <div id="qcTab" class="tab">QC After Upload</div>
+  </div>
+
+  <!-- During Upload Section -->
+  <div id="uploadSection" class="section active">
+    <div class="form-group"><input type="text" id="courseName" placeholder="Course Name"></div>
+    <div class="form-group"><input type="text" id="courseCode" placeholder="Course Code"></div>
+    <div class="form-group"><input type="text" id="reviewer" placeholder="Reviewer"></div>
+    <div class="form-group"><input type="date" id="date"></div>
+    <div id="uploadStepsContainer"></div>
+    <button id="submitUpload">Submit Upload</button>
+  </div>
+
+  <!-- QC After Upload Section -->
+  <div id="qcSection" class="section">
+    <div class="form-group"><input type="text" id="qcCourseName" placeholder="Course Name"></div>
+    <div class="form-group"><input type="text" id="qcCourseCode" placeholder="Course Code"></div>
+    <div class="form-group"><input type="text" id="qcReviewer" placeholder="Reviewer"></div>
+    <div class="form-group"><input type="date" id="qcDate"></div>
+    <div id="qcStepsContainer"></div>
+    <button id="submitQC">Submit QC</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
