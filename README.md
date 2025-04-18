@@ -4,7 +4,7 @@ A lightweight Chrome extension to log course upload & QC check‑lists directly 
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Two modes**  
   1. **During Upload** – log each upload step’s status & notes  
