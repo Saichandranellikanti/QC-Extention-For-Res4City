@@ -17,7 +17,7 @@ A lightweight Chrome extension to log course upload & QC check‑lists directly 
 
 ---
 
-## 🛠 Installation
+## Installation
 
 1. **Clone** this repo:
    ```bash
